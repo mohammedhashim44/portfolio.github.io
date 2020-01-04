@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>W3.CSS Template</title>
+  <title>Mohammed Hashim</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./files/css/style.css">
@@ -32,18 +32,18 @@
     }
 
     function showCategory(categoryName) {
-      var categoryClass = "." + categoryName ; 
-      $(".project").hide() ;
+      var categoryClass = "." + categoryName;
+      $(".project").hide();
       $(categoryClass).show();
     }
 
     function showAll() {
-      $(".project").show() ;
+      $(".project").show();
     }
   </script>
 
   <style>
-    .my_image{
+    .my_image {
       width: 100%;
       height: 220px;
     }
@@ -94,15 +94,14 @@
 
     <div id="imageModal" class="w3-modal w3-animate-zoom" onclick="this.style.display='none'">
       <div class="w3-center ">
-        <img id="imageModalImage" class="w3-modal-content" src="">
+        <img id="imageModalImage" class="w3-modal-content "  style="width: 100%" src="">
       </div>
     </div>
 
 
     <!-- Header -->
     <header id="portfolio">
-      <a href="#"><img
-          src="./files/images/profile_square.jpg" style="width:65px;"
+      <a href="#"><img src="./files/images/profile_square.jpg" style="width:65px;"
           class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
       <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
           class="fa fa-bars"></i></span>
@@ -111,20 +110,35 @@
         <div class="w3-section w3-bottombar w3-padding-16">
           <span class="w3-margin-right">Filter:</span>
           <button class="w3-button w3-black" onclick="showAll()">ALL</button>
-          <button onclick="showCategory('web')" 
-          class="w3-button w3-white"><i class="fa fa-globe w3-margin-right"></i>Web Development</button>
 
-          <button class="w3-button w3-white  "  onclick="showCategory('mobile')"  ><i
-              class="fa fa-mobile w3-margin-right"></i>Applications</button>
+          <button class="w3-button w3-white  " onclick="showCategory('mobile')"><i
+            class="fa fa-mobile w3-margin-right"></i>Applications</button>
 
-          <button class="w3-button w3-white "  onclick="showCategory('desktop')" ><i class="fa fa-desktop w3-margin-right"></i>Desktop</button>
+          <button onclick="showCategory('web')" class="w3-button w3-white"><i
+              class="fa fa-globe w3-margin-right"></i>Web Development</button>
+
+        
+          <button class="w3-button w3-white " onclick="showCategory('desktop')"><i
+              class="fa fa-desktop w3-margin-right"></i>Desktop</button>
         </div>
       </div>
     </header>
 
     <!-- First Photo Grid-->
     <div class="w3-row-padding">
-      
+
+       <!-- My Books App -->
+       <div class="w3-third w3-container w3-margin-bottom project mobile">
+        <img src="./files/images/applications/My Books App/My Books.png" alt="Norway" onclick="showModal(this.src);"
+          class="w3-hover-opacity my_image">
+        <div class="w3-container w3-white">
+          <p><b>My Books App</b></p>
+          <p>An application to track reading books</p>
+        </div>
+      </div>
+
+
+      <!-- eEventti -->
       <div class="w3-third w3-container w3-margin-bottom project mobile">
         <img src="./files/images/eeventti.png" alt="Norway" onclick="showModal(this.src);"
           class="w3-hover-opacity my_image">
@@ -137,6 +151,8 @@
         </div>
       </div>
 
+     
+      <!-- Trucks -->
       <div class="w3-third w3-container w3-margin-bottom project mobile">
         <img src="./files/images/trucks.png" alt="Norway" onclick="showModal(this.src);"
           class="w3-hover-opacity my_image">
@@ -147,24 +163,31 @@
       </div>
 
 
-      <div class="w3-third w3-container w3-margin-bottom project desktop">
-        <img src="./files/images/random_picker.jpg" alt="Norway" onclick="showModal(this.src);"
-          style="width:100%" class="w3-hover-opacity my_image">
-        <div class="w3-container w3-white">
-          <p><b>Random Number Picker</b></p>
-          <p>Desktop app to pick a random number for winning prize.</p>
-        </div>
-      </div>
-
     </div>
 
     <!-- Second Photo Grid-->
     <div class="w3-row-padding">
 
 
+      
+      <!-- Mastery -->
       <div class="w3-third w3-container w3-margin-bottom project web">
-        <img src="./files/images/my_books.png" onclick="showModal(this.src);" alt="Norway"
-          style="width:100%" class="w3-hover-opacity ">
+        <img src="./files/images/Mastery.png" onclick="showModal(this.src);" alt="Norway" style="width:100%"
+          class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>Mastery</b></p>
+          <p>A training platform connects trainers with trainees and ease the process of creating adds for training
+            courses.</p>
+        </div>
+      </div>
+
+
+
+      <!-- My Books -->
+
+      <div class="w3-third w3-container w3-margin-bottom project web">
+        <img src="./files/images/my_books.png" onclick="showModal(this.src);" alt="Norway" style="width:100%"
+          class="w3-hover-opacity ">
         <div class="w3-container w3-white">
           <p><b>My Books </b></p>
           <p>A website to track reading progress.You can add books,add qoutes to this books and add rating.
@@ -173,49 +196,53 @@
         </div>
       </div>
 
-
+      <!-- My Lyrics -->
       <div class="w3-third w3-container w3-margin-bottom project web">
-        <img src="./files/images/my_lyrics.jpg" onclick="showModal(this.src);" alt="Norway"
-          style="width:100%" class="w3-hover-opacity">
+        <img src="./files/images/my_lyrics.jpg" onclick="showModal(this.src);" alt="Norway" style="width:100%"
+          class="w3-hover-opacity">
         <div class="w3-container w3-white">
           <p><b>My Lyrics</b></p>
           <p>A website to get lyrics with one click</p>
           <p>
             You can try it in the link : <a href="http://mylyrics44.herokuapp.com/" target="_blank">
-                http://mylyrics44.herokuapp.com/
+              http://mylyrics44.herokuapp.com/
             </a>
           </p>
         </div>
       </div>
 
-      <div class="w3-third w3-container w3-margin-bottom project web">
-        <img src="./files/images/training_platform.jpg" onclick="showModal(this.src);" alt="Norway"
-          style="width:100%" class="w3-hover-opacity">
-        <div class="w3-container w3-white">
-          <p><b>Mastery</b></p>
-          <p>A training platform connects trainers with trainees and ease the process of creating adds for training
-            courses.</p>
-        </div>
-      </div>
 
-    
 
     </div>
 
-     <!-- Second Photo Grid-->
-     <div class="w3-row-padding">
-        <div class="w3-third w3-container w3-margin-bottom project web">
-            <img src="./files/images/university_website.jpg" onclick="showModal(this.src);" alt="Norway"
-              style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-              <p><b>University Website</b></p>
-              <p>A website to manage the communication between the students and the lecturers.</p>
-            </div>
-          </div>
-     </div>
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding">
 
-    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
-        title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+      <!-- University Website -->
+      <div class="w3-third w3-container w3-margin-bottom project web">
+        <img src="./files/images/university_website.jpg" onclick="showModal(this.src);" alt="Norway"
+          style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>University Website</b></p>
+          <p>A website to manage the communication between the students and the lecturers.</p>
+        </div>
+      </div>
+
+      
+      <!-- Random Number Picker -->
+      <div class="w3-third w3-container w3-margin-bottom project desktop">
+        <img src="./files/images/random_picker.jpg" alt="Norway" onclick="showModal(this.src);" style="width:100%"
+          class="w3-hover-opacity my_image">
+        <div class="w3-container w3-white">
+          <p><b>Random Number Picker</b></p>
+          <p>Desktop app to pick a random number for winning prize.</p>
+        </div>
+      </div>
+
+
+    </div>
+
 
     <!-- End page content -->
   </div>
